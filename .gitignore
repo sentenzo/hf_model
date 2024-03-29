@@ -1,0 +1,14 @@
+__pycache__
+.pytest_cache
+.mypy_cache
+.vscode
+.venv
+*.lnk
+
+.env
+!.env*.example
+
+!.gitkeep
+
+TODO.*
+drafts/
