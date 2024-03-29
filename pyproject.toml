@@ -22,6 +22,8 @@ readme = "README.md"
 python = "~3.11"
 torch = { markers = "sys_platform == 'win32'", url = "https://download.pytorch.org/whl/cu118/torch-2.1.2%2Bcu118-cp311-cp311-win_amd64.whl" }
 outlines = "^0.0.37"
+llama-cpp-python = "^0.2.57"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.2.0"

@@ -460,6 +460,28 @@ nearley = ["js2py"]
 regex = ["regex"]
 
 [[package]]
+name = "llama-cpp-python"
+version = "0.2.57"
+description = "Python bindings for the llama.cpp library"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "llama_cpp_python-0.2.57.tar.gz", hash = "sha256:bd81dbc4bc03b7deca3be0496330705d4c53bba726f7c3a47d556c7ec2452304"},
+]
+
+[package.dependencies]
+diskcache = ">=5.6.1"
+jinja2 = ">=2.11.3"
+numpy = ">=1.20.0"
+typing-extensions = ">=4.5.0"
+
+[package.extras]
+all = ["llama_cpp_python[dev,server,test]"]
+dev = ["black (>=23.3.0)", "httpx (>=0.24.1)", "mkdocs (>=1.4.3)", "mkdocs-material (>=9.1.18)", "mkdocstrings[python] (>=0.22.0)", "pytest (>=7.4.0)", "twine (>=4.0.2)"]
+server = ["fastapi (>=0.100.0)", "pydantic-settings (>=2.0.1)", "sse-starlette (>=1.6.1)", "starlette-context (>=0.3.6,<0.4)", "uvicorn (>=0.22.0)"]
+test = ["httpx (>=0.24.1)", "pytest (>=7.4.0)", "scipy (>=1.10)"]
+
+[[package]]
 name = "llvmlite"
 version = "0.42.0"
 description = "lightweight wrapper around basic LLVM functionality"
@@ -1129,6 +1151,20 @@ pluggy = ">=1.4,<2.0"
 
 [package.extras]
 testing = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
 
 [[package]]
 name = "pyyaml"
@@ -1932,4 +1968,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.11"
-content-hash = "4c4d78e16bb5621d28cce452326e5883124d1b7522663a5ea3953a625e3da5da"
+content-hash = "becf6bfc7cc1252cc8bcf90323a1a5660046646e1f0f6097b78f436b012ee748"
