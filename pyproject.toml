@@ -24,6 +24,8 @@ torch = { markers = "sys_platform == 'win32'", url = "https://download.pytorch.o
 outlines = "^0.0.37"
 llama-cpp-python = "^0.2.57"
 python-dotenv = "^1.0.1"
+guidance = "^0.1.13"
+jupyter = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.2.0"
