@@ -9,6 +9,7 @@ known_local_folder = []
 python_version = "3.11"
 disallow_untyped_defs = true
 ignore_missing_imports = true
+exclude = ["jupiter"]
 
 [tool.poetry]
 name = "hf_model"
